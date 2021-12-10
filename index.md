@@ -140,7 +140,7 @@ Third test is unsuccessful
 
 
 
-### 2.Address of operator:
+### 2. Address of operator:
 
 An '&' operator before a variable can be used to fetch its address from the memory
 
