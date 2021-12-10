@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Task 3 'Const' and '&' uses in C++
 
 You can use the [editor on GitHub](https://github.com/joeadham/task-3/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
