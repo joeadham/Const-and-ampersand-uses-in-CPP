@@ -3,11 +3,11 @@
 'Const' and '&' have many uses in C++. Therefore, I tried to gather all their uses in one website.
 
 
-### Const
+## Const
 
-#### Usage in data declaration:
+### Usage in data declaration:
 
-##### **Syntax:**
+#### **Syntax:**
 
 ```ruby
 const declaration ;
@@ -15,13 +15,16 @@ member-function const ;
 
 ```
 
-##### **Usage:**
+#### **Usage:**
 
 const instructs the compiler that a variables value is constant and the programmer shouldn’t change it in the future.
 
 **It can be used in the following scenarios:**
 
-- Declaring a variable as a constant e.g.:  const int pi = 3.14;
+- Declaring a variable as a constant e.g.: 
+```ruby
+ const int pi = 3.14;
+ ```
 - Declaring the size of an array:
 ```ruby 
 const int maxarray = 255;
@@ -39,9 +42,9 @@ char store_char[maxarray];
 *Note:* You cannot declare constructors or destructors with the const keyword.
 
 
-#### Usage in data declaration:
+### Usage in data declaration:
 
-##### **Syntax:**
+#### **Syntax:**
 
 1. To declare the object pointed to by the pointer as const:
 ```ruby
@@ -63,13 +66,13 @@ constantPointer = normalPointer;   // C3892 compile error
 }
 ```
 
-### '&' symbol
+## '&' symbol
 
 The & symbol is used in 2 cases in C++:
 1.	As a bitwise (AND) operator
 2.	As a pointer address of operator
 
-#### 1.Bitwise operator:
+### 1.Bitwise operator:
 
 **Single &:**
 A single '&' compares each bit of two variables and returns 1 for each bit if they are 1, otherwise it returns a 0 bit e.g.:
@@ -88,8 +91,9 @@ int main() {
 *Output: 0*
 
 **Double &&:**
+
 Double && symbol is used to compare the values of two elements and returns true if they both are true, otherwise returns false e.g.:
-```ruby
+```
 #include <iostream>
 using namespace std;
 
@@ -124,18 +128,18 @@ Second test is unsuccessful
 Third test is unsuccessful
 ```
 
-#### 2.Address of operator:
+### 2.Address of operator:
 
 An '&' operator before a variable can be used to fetch its address from the memory
 
-##### **Syntax:**
+#### **Syntax:**
 
 ```ruby
 int a = 10;
 int *ptr = &a; //ptr now holds the address of a in the memory
 ```
 
-##### **Usage:**
+#### **Usage:**
 
 It can be used to find the address of a variable or using the address to change the value of the element it is holding e.g.:
 ```ruby
