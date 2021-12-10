@@ -3,7 +3,10 @@
 'Const' and '&' have many uses in C++. Therefore, I tried to gather all their uses in one website.
 
 
+
+
 ## Const
+
 
 ### Usage in data declaration:
 
@@ -37,9 +40,11 @@ char store_char[maxarray];
    *constantPointer = 'a';   // OK
    constantPointer = secondPointer;   // C3892 compilation error
 ```
-- •	In the declaration of read-only functions e.g.: get functions.
+- In the declaration of read-only functions e.g.: get functions.
 
 *Note:* You cannot declare constructors or destructors with the const keyword.
+
+
 
 
 ### Usage in data declaration:
@@ -56,6 +61,7 @@ const int *constantIntPointer;
 char * const constantPointerToCharElement;
 ```
 *Note:* A const pointer of a given type can be assigned to a pointer of the same type. However, a pointer that is not const cannot be assigned to a const pointer e.g.:
+
 ```ruby
 int *const constantPointer = 0;
 int *normalPointer;
