@@ -72,11 +72,14 @@ constantPointer = normalPointer;   // C3892 compile error
 }
 ```
 
+
+
 ## '&' symbol
 
 The & symbol is used in 2 cases in C++:
 1.	As a bitwise (AND) operator
 2.	As a pointer address of operator
+
 
 ### 1.Bitwise operator:
 
@@ -95,6 +98,7 @@ int main() {
 
 ```
 *Output: 0*
+
 
 **Double &&:**
 
@@ -134,9 +138,12 @@ Second test is unsuccessful
 Third test is unsuccessful
 ```
 
+
+
 ### 2.Address of operator:
 
 An '&' operator before a variable can be used to fetch its address from the memory
+
 
 #### **Syntax:**
 
